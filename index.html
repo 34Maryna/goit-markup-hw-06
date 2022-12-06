@@ -53,8 +53,31 @@
         <use href="./img/icons.svg#icon-close-black"></use>
       </svg>
         </button>
-        </div>
+        <p class="modal-heading">Залиште свої дані, ми вам передзвонимо</p>
+      <form action="">
+        <div class="modal-input-group">
+        <label for="name">Ім'я</label>
+        <input type="text" class="modal-input" name="name" id="name" required>
       </div>
+        <div class="modal-input-group">
+        <label for="tel">Телефон</label>
+        <input type="tel" class="modal-input" name="tel" id="tel"
+        value="+380"
+        pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
+      </div>
+        <div class="modal-input-group">
+        <label for="email">Пошта</label>  
+        <input type="email" class="modal-input" name="email" id="email" required>
+      </div>
+      <div class="modal-input-group">
+        <label for="comment">Коментар</label>
+        <textarea name="comment" id="comment" class="modal-text" placeholder="Введіть текст"></textarea>
+      </div>
+      <p class="modal-subtext">Погоджуюся з розсилкою та приймаю Умови договору</p>  
+      <button type="submit" class="mdl-button">Відправити</button>
+      </form>   
+      </div>
+        </div>
       </div>
       </section>
 
